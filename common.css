@@ -285,6 +285,7 @@
 }
 .hd .hd_right > a:first-of-type:hover {
   font-weight: bold;
+  color: var(--MC);
 }
 .hd .hd_right > a:nth-of-type(2) {
   background-color: var(--MC);
