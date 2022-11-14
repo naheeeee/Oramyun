@@ -498,7 +498,7 @@
   transition: 0.2s;
 }
 .sec2 .recipe_list:hover > img {
-  width: 105%;
+  transform: scale(1.05);
 }
 .sec2 .recipe_list > a {
   /* border: 1px solid mediumaquamarine; */
