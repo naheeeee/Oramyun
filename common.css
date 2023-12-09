@@ -38,6 +38,9 @@
   max-width: 1400px;
   margin: auto;
 }
+body {
+  overflow-x: hidden;
+}
 .qna {
   /* border: 1px solid violet; */
   position: fixed;
@@ -465,8 +468,6 @@
   font-weight: bold;
   font-size: var(--M2);
 }
-.sec2 > h3 > P:first-of-type {
-}
 .sec2 > h3 > P:nth-of-type(2) {
   display: none;
 }
@@ -863,14 +864,12 @@
   width: 50%;
   padding: 3.5rem 2.5rem 5rem 2.5rem;
 }
-
 .sec6 .sec6_question > h3 {
   font-size: var(--M2);
   font-weight: bold;
   color: var(--MC);
   padding: 0.75rem 0;
 }
-
 .sec6 .question_list > li {
   padding: 0.5rem 0 0.5rem 3rem;
 }
@@ -884,7 +883,6 @@
 .sec6 .question_box:hover {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 }
-
 .sec6 .question_box > p:first-of-type {
   font-weight: bold;
   position: relative;
@@ -1416,4 +1414,42 @@ footer {
   }
 }
 @media (max-width: 600px) {
+  .sec1 .sec1_text > h2 {
+    font-size: var(--M1);
+    padding-bottom: 1.5rem;
+  }
+  .sec1 .sec1_text > p {
+    font-size: var(--S3);
+  }
+  .sec1 .sec1_text > div > p {
+    font-size: 0.9rem;
+  }
+  .sec1 .sec1_text {
+    width: 90%;
+  }
+  .sec1 .sec1_list {
+    flex-wrap: wrap;
+  }
+  .sec1 .sec1_list > li {
+    width: calc(100% / 3);
+  }
+  .sec1 .sec1_list > li > div > span {
+    font-size: 1rem;
+  }
+  .sec6 .sec6_question {
+    width: 100%;
+  }
+  .sec6 .question_list > li {
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+  }
+  .sec6 .question_list > li:first-of-type {
+    padding: 0 0.5rem 0.5rem 0.5rem;
+  }
+  .sec6 .question_list > li:last-of-type {
+    padding: 0.5rem 0.5rem 1.75rem 0.5rem;
+  }
+  .sec6 .question_box {
+    width: 100%;
+  }
 }
