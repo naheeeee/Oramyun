@@ -1241,11 +1241,11 @@ footer {
     height: 80%;
   }
   .sec3 .sec3_con > li:nth-of-type(2)::before {
-    width: 45%;
-    height: 50%;
+    width: 30%;
+    height: 40%;
     top: auto;
     bottom: -20%;
-    right: -12%;
+    right: -3%;
   }
   .sec4 > h3 {
     padding: 5% 0 4% 0;
@@ -1411,6 +1411,11 @@ footer {
   }
 }
 @media (max-width: 600px) {
+  .ham button {
+    width: 4rem;
+    font-size: 1rem;
+    height: 5.5%;
+  }
   .sec1 .sec1_left {
     padding: 19vh 0 5% 0;
   }
@@ -1487,6 +1492,9 @@ footer {
 }
 
 @media (max-width: 450px) {
+  .eventban button {
+    right: 10%;
+  }
   .sec1 .sec1_text > h2 {
     font-size: 26px;
     padding-bottom: 1.5rem;
@@ -1503,6 +1511,9 @@ footer {
     font-size: 0.9rem;
     padding: 0.25rem 0.65rem;
   }
+  .sec1 .sec1_list > li > div > span {
+    font-size: 0.9rem;
+  }
   .sec4 > h3 > p:first-of-type {
     font-size: 20px;
   }
@@ -1517,6 +1528,9 @@ footer {
     /* border: 1px solid rebeccapurple; */
     top: 11%;
     transform: translateY(-50%);
+  }
+  .sec6 .sec6_cs::before {
+    display: none;
   }
   .foot .foot_topleft > a {
     /* border: 1px solid red; */
