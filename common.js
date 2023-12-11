@@ -9,3 +9,13 @@ $(function () {
     },
   });
 });
+
+const $hamOpen = document.querySelector(".ham_open"),
+  $hamClose = document.querySelector(".ham_close");
+
+$hamOpen.addEventListener("click", function () {
+  document.body.classList.add("scrollLock");
+});
+$hamClose.addEventListener("click", function () {
+  document.body.classList.remove("scrollLock");
+});

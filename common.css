@@ -38,8 +38,8 @@
   max-width: 1400px;
   margin: auto;
 }
-body {
-  overflow-x: hidden;
+.scrollLock {
+  overflow: hidden;
 }
 .qna {
   /* border: 1px solid violet; */
@@ -1245,7 +1245,7 @@ footer {
     height: 40%;
     top: auto;
     bottom: -20%;
-    right: -3%;
+    right: 0%;
   }
   .sec4 > h3 {
     padding: 5% 0 4% 0;
@@ -1375,6 +1375,7 @@ footer {
     padding-bottom: 2rem;
   }
   .foot .foot_info > p {
+    /* border: 1px solid red; */
     text-align: center;
     padding-top: 0.5rem;
   }
@@ -1451,10 +1452,10 @@ footer {
     font-size: 22px;
   }
   .sec5 > h3 {
-    padding: 1.5rem 0 1.5rem 4rem;
+    padding: 1.5rem 0 1.5rem 0;
   }
   .sec5 > h3::before {
-    width: 30vw;
+    width: 28vw;
     left: 0;
   }
   .sec5:hover > h3 > p:first-of-type::before {
@@ -1489,8 +1490,11 @@ footer {
   .sec6 .question_box {
     width: 100%;
   }
+  .foot .info_box > p:nth-of-type(2) {
+    /* border: 1px solid red; */
+    padding-right: 0;
+  }
 }
-
 @media (max-width: 450px) {
   .eventban button {
     right: 10%;
